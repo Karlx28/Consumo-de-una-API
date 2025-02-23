@@ -10,22 +10,11 @@ body {
 
 }
 
-
-header {
-    background-color: #4c146f;
-    padding: 20px;
-    border-radius: 10px;
-}
-
 h1 {
+    background-color: #f8a7b3c0;
     color: #4c146f;
+    padding: 20px;
     text-align: center;
-}
-
-.header img {
-    width: 80px;
-    height: 80px;
-    margin-right: 20px;
     border-radius: 10px;
 }
 
