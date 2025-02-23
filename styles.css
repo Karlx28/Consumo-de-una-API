@@ -1,0 +1,60 @@
+body {
+    font-family: 'Rye', cursive;
+    text-align: center;
+    margin: 20px;
+    color: white;
+    background-image: url('Patitas.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+
+header {
+    background-color: #4c146f;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #4c146f;
+    text-align: center;
+}
+
+.header img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #c53795;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #d44797;
+}
+
+.image-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 450px;
+    height: 600px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(13, 255, 0, 0.8);
+    border: 10px solid rgb(159, 75, 255);
+}

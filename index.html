@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Nekos Best</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+<body>
+    <h1>Imagen aleatoria de neko</h1>
+    <button onclick="obtenerImagen()">Obtén tu neko :3</button>
+    <div class="image-container">
+        <img id="imagenNeko" src="" alt="Imagen neko aparecerá aquí">
+    </div>
+    
+    <script>
+        function obtenerImagen() {
+            fetch('https://nekos.best/api/v2/neko')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("imagenNeko").src = data.results[0].url;
+                })
+                .catch(error => {
+                    console.error("Error al obtener la imagen:", error);
+                    alert("Hubo un problema al obtener la imagen. Intentalo  de nuevo :3");
+                });
+        }
+    </script>
+</body>
